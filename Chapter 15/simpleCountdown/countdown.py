@@ -9,5 +9,5 @@ def countdown(time):
 	subprocess.Popen(['see', 'alarm.wav'])
 
 if __name__ == '__main__':
-	if type(sys.argv[1]) == int:
-		countdown(sys.argv[1])
+	if type(int(argv[1])) == int:
+		countdown(argv[1])
