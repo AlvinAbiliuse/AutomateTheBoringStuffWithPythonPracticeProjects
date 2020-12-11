@@ -4,7 +4,7 @@ import bs4
 def xkcdParse():
 	num = 1
 	while True:
-		siteData = requests.get('http://xkcd.com/' + str(num))
+		siteData = requests.get('https:a//xkcd.com/' + str(num))
 		print('Getting site info')
 		if siteData.status_code == 200:
 			siteBS = bs4.BeautifulSoup(siteData, features='lxml')
