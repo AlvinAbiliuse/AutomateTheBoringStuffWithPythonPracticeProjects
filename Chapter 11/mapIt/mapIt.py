@@ -1,10 +1,13 @@
 import webbrowser
 import sys
+import pyperclip
 
 def mapOpen():
-	search = 'google.com/maps/search/' + ' '.join(sys.argv[1:])
-	webbrowser.open(search)
+	if len(sys.argv) > 1:
+		address = ' '.join(sys.argv[1:])
+	else:
+		address = pyperclip.paste()
+	webbrowser.open('google.com/maps/search/' + str(address))
 
 if __name__ == "__main__":
-	if len(sys.argv) > 1:
-		mapOpen()
+	mapOpen()
