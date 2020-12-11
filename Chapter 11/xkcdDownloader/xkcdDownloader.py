@@ -4,8 +4,18 @@ import bs4
 def xkcdParse():
 	num = 1
 	while True:
-		
-def xkcdDownload(link, number):
+		siteData = requests.get('http://xkcd.com/' + str(num))
+		if python.status_code == 200:
+			siteBS = bs4.BeautifulSoup(siteData)
+			elem = siteBS.select('#comic img')
+			imgLink = elem[0].get('src')[2:]
+			xkcdDownloader(imgLink, num)
+			num += 1
+		else:
+			break
+
+
+def xkcdDownloader(link, number):
 	imageData = requests.get(link)
 	imageData.raise_for_status()
 	with open(f'./{number}.png', 'wb') as imageFile:
@@ -13,3 +23,4 @@ def xkcdDownload(link, number):
 			imageFile.write(i)
 	
 
+xkcdParse()
