@@ -7,7 +7,7 @@ def xkcdParse():
 		siteData = requests.get('http://xkcd.com/' + str(num))
 		print('Getting site info')
 		if siteData.status_code == 200:
-			siteBS = bs4.BeautifulSoup(siteData)
+			siteBS = bs4.BeautifulSoup(siteData, features='lxml')
 			elem = siteBS.select('#comic img')
 			imgLink = elem[0].get('src')[2:]
 			xkcdDownloader(imgLink, num)
