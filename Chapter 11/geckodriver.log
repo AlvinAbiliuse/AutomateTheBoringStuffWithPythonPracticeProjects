@@ -5,3 +5,9 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1608682884680	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: http://inventwithpython.com/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)
 1608683648145	Marionette	INFO	Stopped listening on port 36987
+1608857141330	geckodriver	INFO	Listening on 127.0.0.1:40147
+1608857142283	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQZnQzX"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1608857159586	Marionette	INFO	Listening on port 43685
+1608857159750	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://inventwithpython.com/js/bootstrap.min.js, line 7: Error: Bootstrap tooltips require Tether (http://tether.io/)

@@ -1,6 +1,6 @@
 from selenium import webdriver
 
-browser = webdriver.Firefox(executable_path = '/home/alvin/Downloads/geckodriver')
+browser = webdriver.Firefox(executable_path = './geckodriver')
 browser.get('http://inventwithpython.com')
 try:
 	elem = browser.find_element_by_class_name('bookcover')
