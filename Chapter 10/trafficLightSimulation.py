@@ -11,6 +11,7 @@ def switchLights(stopLight):
 				stopLight[key] = 'red'
 			elif stopLight[key] == 'red':
 				stopLight[key] = 'green'
+		assert 'red' in stopLight.values(), 'Neither light is red! ' + str(stopLight.values())
 		print(market_2nd)
 		print(mission_16th)
 		print('\n')
