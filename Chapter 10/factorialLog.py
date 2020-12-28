@@ -2,6 +2,7 @@
 
 import logging
 logging.basicConfig(level=logging.DEBUG, format=f'%(asctime)s - %(levelname)s - %(message)s')
+logging.disable(logging.DEBUG)
 
 def factorial(n):
 	logging.debug(f'Start of factorial ({n})')
