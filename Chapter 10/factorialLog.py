@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 import logging
-logging.basicConfig(level=logging.DEBUG, format=f'%(asctime)s - %(levelname)s - %(message)s')
-logging.disable(logging.DEBUG)
+logging.basicConfig(filename='./log.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+# logging.disable(logging.DEBUG)
 
 def factorial(n):
 	logging.debug(f'Start of factorial ({n})')
