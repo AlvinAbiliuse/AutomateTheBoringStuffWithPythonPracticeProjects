@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "errorExample.py", line 10, in <module>
+    spam()
+  File "errorExample.py", line 4, in spam
+    bacon()
+  File "errorExample.py", line 7, in bacon
+    raise Exception('This is an error message')
+Exception: This is an error message
+Traceback (most recent call last):
+  File "errorExample.py", line 10, in <module>
+    spam()
+  File "errorExample.py", line 4, in spam
+    bacon()
+  File "errorExample.py", line 7, in bacon
+    raise Exception('This is an error message')
+Exception: This is an error message
+Traceback (most recent call last):
+  File "errorExample.py", line 10, in <module>
+    spam()
+  File "errorExample.py", line 4, in spam
+    bacon()
+  File "errorExample.py", line 7, in bacon
+    raise Exception('This is an error message')
+Exception: This is an error message
+
+Traceback (most recent call last):
+  File "errorExample.py", line 10, in <module>
+    spam()
+  File "errorExample.py", line 4, in spam
+    bacon()
+  File "errorExample.py", line 7, in bacon
+    raise Exception('This is an error message')
+Exception: This is an error message
+
