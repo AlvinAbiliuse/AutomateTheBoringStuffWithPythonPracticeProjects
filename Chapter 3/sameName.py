@@ -5,7 +5,7 @@ def spam():
 def bacon():
 	eggs = 'bacon local'
 	print(eggs)	# prints 'bacon local'
-	span()
+	spam()
 	print(eggs)	# prints 'bacon local'
 
 egs = 'global'
