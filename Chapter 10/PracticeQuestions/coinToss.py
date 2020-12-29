@@ -9,7 +9,12 @@ while guess not in ('heads', 'tails'):
 	print('Guess the coin toss! Enter Heads or tails')
 	guess = input().lower()
 
-toss = random.randint(0, 1)
+toss = ''
+if random.randint(0,1) == 0:
+	toss = 'heads'
+else:
+	toss = 'tails'
+
 logging.debug(f'Guess is {guess}')
 logging.debug(f'toss is {toss}')
 
