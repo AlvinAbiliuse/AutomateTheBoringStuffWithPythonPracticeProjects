@@ -10,5 +10,6 @@ def collatz(n):
 		print(str(3 * n + 1))
 		collatz(3 * n + 1)
 
-collatz(int(input('input number')))
+collatz(int(input('input number:\n')))
+
 
