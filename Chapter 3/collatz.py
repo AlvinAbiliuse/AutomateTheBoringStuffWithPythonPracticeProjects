@@ -10,6 +10,8 @@ def collatz(n):
 		print(str(3 * n + 1))
 		collatz(3 * n + 1)
 
-collatz(int(input('input number:\n')))
-
+try:
+	collatz(int(input('input number:\n')))
+except ValueError:
+	print('You must type in an integer!')
 
