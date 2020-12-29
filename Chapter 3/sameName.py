@@ -8,6 +8,6 @@ def bacon():
 	spam()
 	print(eggs)	# prints 'bacon local'
 
-egs = 'global'
+eggs = 'global'
 bacon()
 print(eggs)
