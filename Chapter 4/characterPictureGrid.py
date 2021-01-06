@@ -9,6 +9,6 @@ grid = [['.', '.', '.', '.', '.', '.'],
 		['.', '.', '.', '.', '.', '.']]
 
 for i in range(len(grid[0])):
-	for j in [x for x in range(len(grid))]:
+	for j in range(len(grid)):
 		print(grid[j][i] + ' ', end='')
 	print('\n')
