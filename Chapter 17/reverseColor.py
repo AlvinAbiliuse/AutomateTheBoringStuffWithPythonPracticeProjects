@@ -6,15 +6,12 @@ width, height = im.size
 num = 0
 turn = 0
 for x in range(1000):
-	if turn == 0:
-		turn = 1
-	elif turn == 1:
-		turn = 2
-	elif turn == 2:
-		turn = 3
-	elif turn == 3:
+	if turn == 3:
 		turn = 0
 		num +=1
+	else:
+		turn +=1
+
 	for y in range(1000):
 		w = (width - 1) - x
 		h = (height - 1) - y
