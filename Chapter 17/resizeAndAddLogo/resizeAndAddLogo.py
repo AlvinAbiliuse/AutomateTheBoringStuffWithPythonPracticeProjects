@@ -22,8 +22,8 @@ def edit(image):
 			w = int(h * ratio)
 			print(ratio)
 			print(f'    {image} new width: {w}, new height: {h}')
-#	resizedImage = editIm.resize((w, h))
-#	resizedImage.save(f'./Resized/{image}')
+	resizedImage = editIm.resize((w, h))
+	resizedImage.save(f'./Resized/{image}')
 
 logoIm = Image.open('catlogo.png')
 
