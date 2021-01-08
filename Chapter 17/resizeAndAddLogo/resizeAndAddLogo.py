@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 def edit(image):
-	editIm = Image.open(image)
+	editIm = Image.open(os.path.join('Images', image))
 	w, h = editIm.size
 	print(f'{image} width: {w}, height: {h}')
 	if w > h:
@@ -17,8 +17,10 @@ def edit(image):
 			h = 300
 			w = w - (oh - h)
 			print(f'    {image} new width: {w}, new height: {h}')
+	resizedImage = editIm.resize((w, h))
+	resizedImage.save(f'./resized/{image}')
 
 logoIm = Image.open('catlogo.png')
 
 for i in os.listdir('./Images'):
-	edit(os.path.join('Images', i))
+	edit(i)
