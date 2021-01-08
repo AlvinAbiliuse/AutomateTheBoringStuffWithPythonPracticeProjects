@@ -19,7 +19,7 @@ def edit(image):
 #			w = w - (oh - h)
 #			print(f'    {image} new width: {w}, new height: {h}')
 #	resizedImage = editIm.resize((w, h))
-#	resizedImage.save(f'./resized/{image}')
+#	resizedImage.save(f'./Resized/{image}')
 
 logoIm = Image.open('catlogo.png')
 
