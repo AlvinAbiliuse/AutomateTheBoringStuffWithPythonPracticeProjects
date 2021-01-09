@@ -10,8 +10,8 @@ def totalBrought(guests, item):
 	return numBrought
 
 print('Number of things being brought:')
-print(' - Apples		  ' + str(totalBrought(allGuests, 'apples')))
-print(' - Cups			  ' + str(totalBrought(allGuests, 'cups')))
-print(' - Cakes			  ' + str(totalBrought(allGuests, 'cakes')))
+print(' - Apples          ' + str(totalBrought(allGuests, 'apples')))
+print(' - Cups            ' + str(totalBrought(allGuests, 'cups')))
+print(' - Cakes           ' + str(totalBrought(allGuests, 'cakes')))
 print(' - Ham Sandwiches  ' + str(totalBrought(allGuests, 'ham sandwiches')))
-print(' - Apple Pies	  ' + str(totalBrought(allGuests, 'apple pies')))
+print(' - Apple Pie       ' + str(totalBrought(allGuests, 'apple pies')))
