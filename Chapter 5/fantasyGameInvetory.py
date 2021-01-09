@@ -10,9 +10,14 @@ def displayInventory(inventory):
 		print('Total number of items: ' + str(item_total))
 
 def addToInventory(inventory, addItems):
+	tech = inventory
 	for i in addItems:
-		if i in inventory.items():
-			inventory[i] = inventory[i] + 1
+		if i in tech.items():
+			tech[i] = tech[i] + 1
+		else:
+			tech[i] = 1
+	print(tech)
+	return tech
 	
 displayInventory(stuff)
 print('')
