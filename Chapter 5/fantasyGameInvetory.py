@@ -9,16 +9,15 @@ def displayInventory(inventory):
 def addToInventory(inventory, addItems):
 	tech = inventory
 	for i in addItems:
-		if i in tech.items():
+		if i in tech.keys():
 			tech[i] = tech[i] + 1
 		else:
 			tech[i] = 1
-	print(tech)
 	return tech
 	
 inv = {'gold coin': 42, 'rope': 1}
 displayInventory(inv)
 print('')
-dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
+dragonLoot = ['gold coin', 'rope', 'dagger', 'gold coin', 'gold coin', 'ruby']
 inv = addToInventory(inv, dragonLoot)
 displayInventory(inv)
