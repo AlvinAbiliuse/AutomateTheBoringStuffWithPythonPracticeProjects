@@ -1,20 +1,20 @@
 from PIL import Image
 import os
 
-def resize(image):
+def resize(image, size):
 	editIm = Image.open(os.path.join('Images', image))
 	w, h = editIm.size
 	print(f'{w} {h}')
 	if w >= h:
-		if w > 300:
+		if w > size:
 			ow = w
-			w = 300
+			w = size
 			ratio = h / ow 
 			h = int(w * ratio)
 	elif h > w:
-		if h > 300:
+		if h > size:
 			oh = h
-			h = 300
+			h = size
 			ratio = w / oh 
 			w = int(h * ratio)
 	print(f'    {w} {h}')
@@ -30,8 +30,8 @@ def addLogo(image, width, height, name):
 
 originalLogoIm = Image.open('catlogo.png')
 wi, he = originalLogoIm.size
-logoIm = originalLogoIm.resize((int(wi / 10), int(he / 10)))
+logoIm = originalLogoIm.resize((int(wi / 8), int(he / 8)))
 wi, he = logoIm.size
 
 for i in os.listdir('./Images'):
-	mainImage = resize(i)
+	mainImage = resize(i, 300)
