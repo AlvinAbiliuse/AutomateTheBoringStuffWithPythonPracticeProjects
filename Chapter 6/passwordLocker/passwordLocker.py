@@ -1,7 +1,7 @@
 
 passwords = {'alvinabiliuse@gmail.com':'tuba123tub', 'AlvinAbiliuse':'flatpak4lyf'}
 
-userInput = input('Username or email')
+userInput = input('Enter username or email\n')
 if userInput in passwords.keys():
 	print(f'Password for {userInput} is {passwords[userInput]}')
 else:
