@@ -1,8 +1,20 @@
+import sys
 
 passwords = {'alvinabiliuse@gmail.com':'tuba123tub', 'AlvinAbiliuse':'flatpak4lyf'}
 
-userInput = input('Enter username or email\n')
-if userInput in passwords.keys():
-	print(f'Password for {userInput} is {passwords[userInput]}')
+masterPassword = 'youMeanMainPassword?'
+
+if input('Enter Master Password:\n') == masterPassword:
+	print('', end='')
 else:
-	print(f'Password for {userInput} is not stored!')
+	sys.exit()
+while True:
+	userInput = input('Enter username or email:\n')
+	if userInput in passwords.keys():
+		print(f'Password for {userInput} is {passwords[userInput]}')
+	else:
+		print(f'Password for {userInput} is not stored!')
+	if input('Try Again: (y/n):\n').lower() == 'y':
+		print('', end='')
+	else:
+		sys.exit()
