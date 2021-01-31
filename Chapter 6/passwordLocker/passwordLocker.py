@@ -1,10 +1,16 @@
 import sys
 import pyperclip
+import json
 
-passwords = {'alvinabiliuse@gmail.com':'tuba123tub', 'AlvinAbiliuse':'flatpak4lyf'}
+try:
+	jsonPass = open('passwords.json')
+except FileNotFoundError:
+	with open('passwords.json', 'x') as js:
+		js.write(json.dumps({}))
+	jsonPass = open('passwords.json')
 
 masterPassword = 'youMeanMainPassword?'
-
+passwords = json.loads(jsonPass.read())
 if input('Enter Master Password:\n') == masterPassword:
 	print('', end='')
 else:
