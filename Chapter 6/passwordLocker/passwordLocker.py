@@ -22,6 +22,13 @@ while True:
 		print(f'Password for {userInput} has been copied')
 	else:
 		print(f'Password for {userInput} is not stored!')
+		if input('Would you like to save it? (y/n) \n').lower() == 'y':
+			passwords[userInput] = input(f'Enter Password for {userInput}:\n')
+			with open('passwords.json', 'w') as js:
+				js.write(json.dumps(passwords))
+			print('Password Saved!')
+		else:
+			print('', end='')
 	if input('Try Again: (y/n):\n').lower() == 'y':
 		print('', end='')
 	else:
