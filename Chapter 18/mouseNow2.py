@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # mouseNow2.py
 # version of mouseNow that uses print statements instead of sys
 
