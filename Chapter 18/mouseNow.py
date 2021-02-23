@@ -1,6 +1,12 @@
+#!/usr/bin/env python3
+
+# mouseNow.py
+# this version uses sys to use backspace but apparently this could be
+# achieved with print statements as well. Will learn how to do so.
+
+
 import pyautogui
 import sys
-import time
 
 pyautogui.PAUSE = 1
 pyautogui.FAILSAFE = True
