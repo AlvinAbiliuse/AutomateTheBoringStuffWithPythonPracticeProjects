@@ -1,3 +1,6 @@
+# mouseNow2.py
+# version of mouseNow that uses print statements instead of sys
+
 import pyautogui
 
 try:
