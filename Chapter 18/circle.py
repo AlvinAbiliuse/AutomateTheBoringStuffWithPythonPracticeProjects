@@ -15,7 +15,7 @@ def arch():
 	x = length
 	y = 0
 	for i in range(vertices):
-		pyautogui.drawRel(x, y, duration=0.2)
+		pyautogui.dragRel(x, y, duration=0.2)
 		x = x - vertices
 		y = y + vertices
 
