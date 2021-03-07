@@ -1,6 +1,8 @@
 import pyautogui, time
 
 pyautogui.FAILSAFE = True
+time.sleep(5)
+pyautogui.click()
 
 def arch():
 	radius = 60
