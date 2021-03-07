@@ -4,7 +4,7 @@ pyautogui.FAILSAFE = True
 time.sleep(5)
 pyautogui.click()
 
-def arch():
+def arc():
 	radius = 45
 	vertices = 10
 	length = 300
@@ -25,4 +25,4 @@ def arch():
 		y = y + newRad
 		
 
-arch()
+arc()
