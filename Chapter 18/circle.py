@@ -5,18 +5,18 @@ time.sleep(5)
 pyautogui.click()
 
 def arch():
-	radius = 60
-	vertices = 5
-	length = 200
+	radius = 45
+	vertices = 45
+	length = 300
 	
-	newRad = radius / 5
-	newLen = length / 5
+	newRad = radius / vertices
+	newLen = length / vertices
 	
-	x = length
+	x = newLen
 	y = 0
 	for i in range(vertices):
 		pyautogui.dragRel(x, y, duration=0.2)
-		x = x - vertices
-		y = y + vertices
+		x = x - newLen
+		y = y + newLen
 
 arch()
