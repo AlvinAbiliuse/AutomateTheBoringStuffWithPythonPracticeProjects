@@ -1,4 +1,4 @@
 import pyautogui
-locatedImage = pyautogui.locateOnScreen('ImageRecognitionScreenshot.png')
 
-pyautogui.moveTo(pyautogui.center(locatedImage))
+pyautogui.moveTo(pyautogui.center(pyautogui.locateOnScreen('ImageRecognitionScreenshot.png')))
+
