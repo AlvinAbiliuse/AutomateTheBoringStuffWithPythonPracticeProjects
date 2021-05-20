@@ -12,10 +12,10 @@ def formFiller():
 	time.sleep(5)
 	pyautogui.click(281, 173)
 	for i in range(2):
-		pyautogui.typewrite('tab')
+		pyautogui.typewrite('\t')
 		time.sleep(1)
 	pyautogui.typewrite('Alvin')
-	pyautogui.typewrite('tab')
+	pyautogui.typewrite('\t')
 	time.sleep(1)
 	pyautogui.typewrite('Heights')
 
