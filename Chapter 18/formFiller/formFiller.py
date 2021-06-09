@@ -18,12 +18,13 @@ def formFiller():
 	pyautogui.typewrite('Heights')
 	pyautogui.typewrite('\t')
 	pyautogui.typewrite('enter')
-	for i in range(2):
+	for i in range(1):
 		pyautogui.typewrite('down')
 	pyautogui.typewrite('enter')
 	pyautogui.typewrite('\t')
-	for i in range(4):
+	for i in range(3):
 		pyautogui.typewrite('right')
+	pyautogui.typewrite('enter')
 	for i in range(2):
 		pyautogui.typewrite('\t')
 	pyautogui.typewrite('No additional comments!')
