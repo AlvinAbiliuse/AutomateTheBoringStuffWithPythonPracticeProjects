@@ -1,22 +1,38 @@
 
 
 import pyautogui
+import random 
+import time
 
+pyautogui.PAUSE = 1
+pyautogui.FAILSAFE = True
 
-name = Point(x=270, y=252)
-weakness = Point(x=277, y=339)
-wizard = Point(x=285, y=424)
-choice1 = Point(x=285, y=452)
-choice2 = Point(x=290, y=479)
-choice3 = Point(x=277, y=500)
-choice4 = Point(x=285, y=526)
-escape = Point(x=448, y=431)
-robo1 = Point(x=316, y=534)
-robo2 = Point(x=348, y=535)
-robo3 = Point(x=377, y=530)
-robo4 = Point(x=406, y=535)
-robo5 = Point(x=432, y=535)
-addCom = Point(x=327, y=630)
-submit = Point(x=233, y=663)
+pyautogui.click(22, 82)
+pyautogui.hotkey('ctrl', 't')
+pyautogui.click(379, 86)
+msg = list('https://docs.google.com/forms/d/e/1FAIpQLScSVDFU76rZvbO_tiIwSt6d9sOK0CZyS9KKMCP6cP5O5W5lVQ/viewform')
+msg.append('enter')
+pyautogui.typewrite((msg))
+time.sleep(3)
+
+# name 
+pyautogui.click(270, 252)
+pyautogui.typewrite('Dino')
+# weakness 
+pyautogui.click(277, 330)
+pyautogui.typewrite('Handshakes')
+# wizard 
+pyautogui.click(285, 420)
+choice = [(285, 452), (290, 479), (277, 500), (285, 526)]
+random.shuffle(choice)
+pyautogui.click(choice[0])
+# escape 
+pyautogui.click(448, 431)
+robo  = [(318, 510), (346, 511), (375, 510), (404, 510), (434, 510)]
+# addCom 
+pyautogui.click(256, 604)
+pyautogui.typewrite('No Additional Comments.')
+# submit 
+pyautogui.moveTo(240, 642)
 
 
