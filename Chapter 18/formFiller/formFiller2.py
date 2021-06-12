@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python3
 
 import pyautogui
 import random 
@@ -14,7 +14,6 @@ msg = list('https://docs.google.com/forms/d/e/1FAIpQLScSVDFU76rZvbO_tiIwSt6d9sOK
 msg.append('enter')
 pyautogui.typewrite((msg))
 time.sleep(3)
-
 # name 
 pyautogui.click(270, 252)
 pyautogui.typewrite('Dino')
@@ -38,5 +37,3 @@ pyautogui.typewrite('No Additional Comments.')
 # submit
 time.sleep(5)
 pyautogui.click(240, 642)
-
-
