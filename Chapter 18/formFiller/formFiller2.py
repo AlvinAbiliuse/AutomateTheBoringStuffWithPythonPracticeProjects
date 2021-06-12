@@ -36,7 +36,6 @@ def formFill():
 	pyautogui.click(256, 604)
 	pyautogui.typewrite('No Additional Comments.')
 	# submit
-	time.sleep(5)
 	pyautogui.click(240, 642)
 
 if __name__ == "__main__":
