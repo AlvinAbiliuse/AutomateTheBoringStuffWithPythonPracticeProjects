@@ -25,14 +25,18 @@ pyautogui.typewrite('Handshakes')
 pyautogui.click(285, 420)
 choice = [(285, 452), (290, 479), (277, 500), (285, 526)]
 random.shuffle(choice)
+print(choice[0])
 pyautogui.click(choice[0])
 # escape 
 pyautogui.click(448, 431)
 robo  = [(318, 510), (346, 511), (375, 510), (404, 510), (434, 510)]
+random.shuffle(robo)
+pyautogui.click(robo[0])
 # addCom 
 pyautogui.click(256, 604)
 pyautogui.typewrite('No Additional Comments.')
-# submit 
-pyautogui.moveTo(240, 642)
+# submit
+time.sleep(5)
+pyautogui.click(240, 642)
 
 
